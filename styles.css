@@ -4,20 +4,34 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header.header {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of content */
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color: #0044cc;
     color: #fff;
-    text-align: center; /* Center text for better mobile display */
+    text-align: center;
+    width: 100%;
 }
 
 header.header .logo {
-    width: 150px; /* Adjust this value to change the logo size */
+    width: 150px;
     height: auto;
     margin-right: 20px;
 }
@@ -25,7 +39,6 @@ header.header .logo {
 header.header .header-text {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Allows the text to take available space */
 }
 
 header.header h1 {
@@ -39,9 +52,40 @@ header.header h2 {
     font-weight: normal;
 }
 
+.navbar {
+    width: 100%;
+    background-color: #0044cc;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -77,6 +121,7 @@ footer {
     padding: 10px;
     background-color: #0044cc;
     color: #fff;
+    width: 100%;
 }
 
 ol, ul {
@@ -91,12 +136,11 @@ ol li, ul li {
 @media (max-width: 768px) {
     header.header {
         flex-direction: column;
-        text-align: center;
     }
 
     header.header .logo {
-        width: 100px; /* Smaller logo for mobile devices */
-        margin: 0 auto 10px; /* Center the logo and add space below it */
+        width: 100px;
+        margin: 0 auto 10px;
     }
 
     header.header .header-text {
@@ -104,16 +148,18 @@ ol li, ul li {
     }
 
     header.header h1 {
-        font-size: 2em; /* Smaller font size for mobile devices */
+        font-size: 2em;
     }
 
     header.header h2 {
-        font-size: 1.2em; /* Smaller font size for mobile devices */
+        font-size: 1.2em;
     }
 
-    section {
+    .container {
         padding: 10px;
-        margin: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
     }
 }
-
