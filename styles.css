@@ -6,19 +6,31 @@ body {
     color: #333;
 }
 
-header {
+header.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
     background-color: #0044cc;
     color: #fff;
-    padding: 20px;
-    text-align: center;
 }
 
-header h1 {
+header.header .logo {
+    width: 150px; /* Adjust this value to change the logo size */
+    height: auto;
+    margin-right: 20px;
+}
+
+header.header .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+header.header h1 {
     margin: 0;
     font-size: 2.5em;
 }
 
-header h2 {
+header.header h2 {
     margin: 0;
     font-size: 1.5em;
     font-weight: normal;
