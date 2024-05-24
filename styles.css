@@ -196,3 +196,9 @@ footer {
         padding: 10px;
     }
 }
+.logo {
+    max-width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px auto; /* Center the logo */
+}
