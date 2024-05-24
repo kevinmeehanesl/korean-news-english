@@ -5,18 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korean News English</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .interactive {
+            cursor: pointer;
+            color: blue;
+        }
+
+        .correct {
+            background-color: green;
+            color: white;
+        }
+
+        .incorrect {
+            background-color: red;
+            color: white;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#vocabulary">Vocabulary</a></li>
-                <li><a href="#warm-up">Warm-Up</a></li>
-                <li><a href="#article">Article</a></li>
-                <li><a href="#comprehension-quiz">Quiz</a></li>
-                <li><a href="#concluding-questions">Concluding Questions</a></li>
-                <li><a href="#synonym-matching">Synonym Matching</a></li>
+                <li class="dropdown">
+                    <a href="#home" class="dropbtn">News Articles</a>
+                    <div class="dropdown-content">
+                        <a href="#beginner">Beginner</a>
+                        <a href="#intermediate">Intermediate</a>
+                        <a href="#advanced">Advanced</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#idioms" class="dropbtn">Speaking</a>
+                    <div class="dropdown-content">
+                        <a href="#idiom-study">Idiom Study</a>
+                        <a href="#listening">Listening</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#about-kne" class="dropbtn">About KNE</a>
+                    <div class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#faqs">FAQs</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#help" class="dropbtn">Help</a>
+                    <div class="dropdown-content">
+                        <a href="#contact">Contact</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <img src="KNElogo.webp" alt="KNE - Korean News English Logo" class="logo">
@@ -115,6 +191,8 @@
             </ul>
             <p>Seoul Metro also <strong>noted</strong> that the average number of subway users in Seoul per day was 8.8 million from January to April.</p>
             <p>Compared to other major cities <strong>worldwide</strong>, Seoul's subway system is extremely busy. <strong>For instance</strong>, the <strong>London Underground</strong>'s busiest station, <strong>Waterloo</strong>, handles about 100 million passengers annually, which translates to roughly 273,000 passengers per day. Similarly, <strong>Tokyo's Shinjuku Station</strong> is known as the world's busiest transport <strong>hub</strong>, with an average of 3.5 million passengers per day. While Seoul's numbers are slightly lower, they highlight the <strong>efficiency</strong> and popularity of the city's subway system.</p>
+                       <p><strong>Published:</strong> May 24, 2024</p>
+            <p><strong>Source:</strong> <a href="https://en.yna.co.kr/view/AEN20240523002600315">Yonhap News</a></p>
         </section>
         
         <section id="comprehension-quiz">
@@ -131,32 +209,32 @@
             <ol>
                 <li>Which station has become the busiest in Seoul?
                     <ul>
-                        <li>a. Gangnam Station</li>
-                        <li>b. Jamsil Station</li>
-                        <li>c. Seoul Station</li>
-                        <li>d. Hongik University Station</li>
+                        <li class="interactive" data-correct="false">a. Gangnam Station</li>
+                        <li class="interactive" data-correct="true">b. Jamsil Station</li>
+                        <li class="interactive" data-correct="false">c. Seoul Station</li>
+                        <li class="interactive" data-correct="false">d. Hongik University Station</li>
                     </ul>
                 </li>
                 <li>Why are Gangnam and Jamsil stations very crowded?
                     <ul>
-                        <li>a. They are the oldest stations.</li>
-                        <li>b. There are many tourists.</li>
-                        <li>c. The subway is faster and more convenient than cars.</li>
-                        <li>d. They have many shops.</li>
+                        <li class="interactive" data-correct="false">a. They are the oldest stations.</li>
+                        <li class="interactive" data-correct="false">b. There are many tourists.</li>
+                        <li class="interactive" data-correct="true">c. The subway is faster and more convenient than cars.</li>
+                        <li class="interactive" data-correct="false">d. They have many shops.</li>
                     </ul>
                 </li>
                 <li>Which city's station handles about 3.5 million passengers per day?
                     <ul>
-                        <li>a. London</li>
-                        <li>b. Seoul</li>
-                        <li>c. Tokyo</li>
-                        <li>d. New York</li>
+                        <li class="interactive" data-correct="false">a. London</li>
+                        <li class="interactive" data-correct="false">b. Seoul</li>
+                        <li class="interactive" data-correct="true">c. Tokyo</li>
+                        <li class="interactive" data-correct="false">d. New York</li>
                     </ul>
                 </li>
             </ol>
             <h4>Vocabulary Fill-in-the-Gap</h4>
             <ol>
-                               <li>Jamsil Station is in __________ Seoul.</li>
+                <li>Jamsil Station is in __________ Seoul.</li>
                 <li>The subway is faster because of heavy __________.</li>
                 <li>Seoul Metro gathered data from all stations on Lines __________.</li>
                 <li>The busiest station in London is __________.</li>
@@ -229,7 +307,7 @@
     </div>
     
     <footer>
-        <p>© 2024 Korean News English. Kevin Meehan. All rights reserved.</p>
+        <p>© 2024 Korean News English. All rights reserved.</p>
         <p>Contact: info@koreannewsenglish.com</p>
         <p>Follow us on:
             <a href="#">Facebook</a> |
@@ -237,6 +315,17 @@
             <a href="#">Instagram</a>
         </p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.interactive').forEach(function(element) {
+            element.addEventListener('click', function() {
+                if (this.dataset.correct === 'true') {
+                    this.classList.add('correct');
+                } else {
+                    this.classList.add('incorrect');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
