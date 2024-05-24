@@ -8,10 +8,12 @@ body {
 
 header.header {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping of content */
     align-items: center;
     padding: 20px;
     background-color: #0044cc;
     color: #fff;
+    text-align: center; /* Center text for better mobile display */
 }
 
 header.header .logo {
@@ -23,6 +25,7 @@ header.header .logo {
 header.header .header-text {
     display: flex;
     flex-direction: column;
+    flex: 1; /* Allows the text to take available space */
 }
 
 header.header h1 {
@@ -83,3 +86,34 @@ ol, ul {
 ol li, ul li {
     margin: 10px 0;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    header.header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header.header .logo {
+        width: 100px; /* Smaller logo for mobile devices */
+        margin: 0 auto 10px; /* Center the logo and add space below it */
+    }
+
+    header.header .header-text {
+        align-items: center;
+    }
+
+    header.header h1 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    header.header h2 {
+        font-size: 1.2em; /* Smaller font size for mobile devices */
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
