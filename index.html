@@ -89,6 +89,9 @@
         
         .contents {
             margin: 20px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
         }
         
         .contents h3 {
@@ -99,7 +102,7 @@
             padding-left: 20px;
         }
 
-        .vocabulary-section, .warm-up-section, .article-section, .comprehension-section, .gap-fill-section, .concluding-questions-section, .synonym-matching-section {
+        .vocabulary-section, .warm-up-section, .article-section, .true-false-section, .multiple-choice-section, .gap-fill-section, .concluding-questions-section, .synonym-matching-section {
             margin-bottom: 20px;
         }
 
@@ -167,12 +170,8 @@
                 <li>Vocabulary</li>
                 <li>Warm-up</li>
                 <li>Article</li>
-                <li>Comprehension
-                    <ul>
-                        <li>True/False Questions</li>
-                        <li>Multiple Choice Questions</li>
-                    </ul>
-                </li>
+                <li>True/False Questions</li>
+                <li>Multiple Choice Questions</li>
                 <li>Gap Fill</li>
                 <li>Concluding Questions</li>
                 <li>Synonym Matching</li>
@@ -271,9 +270,8 @@
             <p><strong>Source:</strong> <a href="https://en.yna.co.kr/view/AEN20240523002600315">Yonhap News</a></p>
         </section>
         
-        <section id="comprehension-quiz" class="comprehension-section">
-            <h3>Comprehension Quiz</h3>
-            <h4>True/False Questions</h4>
+        <section id="true-false" class="true-false-section">
+            <h3>True/False Questions</h3>
             <ol>
                 <li>Jamsil Station is now the busiest station in Seoul. (True/False)</li>
                 <li>Gangnam Station is located in southeastern Seoul. (True/False)</li>
@@ -281,7 +279,10 @@
                 <li>Sillim Station has fewer than 100,000 passengers per day. (True/False)</li>
                 <li>Waterloo Station in London handles around 273,000 passengers per day. (True/False)</li>
             </ol>
-            <h4>Multiple Choice Questions</h4>
+        </section>
+
+        <section id="multiple-choice" class="multiple-choice-section">
+            <h3>Multiple Choice Questions</h3>
             <ol>
                 <li>Which station has become the busiest in Seoul?
                     <ul>
@@ -336,7 +337,7 @@
                 <li>Tokyo's busiest station is __________ Station.</li>
             </ol>
             <div class="word-bank">
-                <strong>Word Bank</strong>: southeastern, congestion, 1-9, Waterloo, Shinjuku
+                <strong>Word Bank</strong>: southeastern / congestion / 1-9 / Waterloo / Shinjuku
             </div>
         </section>
 
@@ -365,7 +366,7 @@
                 </tr>
                 <tr>
                     <td>In comparison</td>
-                    <td>B. Efficiency</td>
+                    <td>B. Contrast</td>
                 </tr>
                 <tr>
                     <td>Used to be</td>
@@ -373,27 +374,27 @@
                 </tr>
                 <tr>
                     <td>Crowded</td>
-                    <td>D. For example</td>
+                    <td>D. Packed</td>
                 </tr>
                 <tr>
                     <td>Traffic congestion</td>
-                    <td>E. Noted</td>
+                    <td>E. Heavy traffic</td>
                 </tr>
                 <tr>
                     <td>Noted</td>
-                    <td>F. Jammed</td>
+                    <td>F. Mentioned</td>
                 </tr>
                 <tr>
                     <td>For instance</td>
-                    <td>G. Hub</td>
+                    <td>G. For example</td>
                 </tr>
                 <tr>
                     <td>Hub</td>
-                    <td>H. Heavy traffic</td>
+                    <td>H. Center</td>
                 </tr>
                 <tr>
                     <td>Efficiency</td>
-                    <td>I. In relation to</td>
+                    <td>I. Effectiveness</td>
                 </tr>
                 <tr>
                     <td>Worldwide</td>
@@ -404,10 +405,10 @@
     </div>
     
     <footer>
-        <p>© 2024 Korean News English. All rights reserved.</p>
+        <p>© 2024 Korean News English. All rights reserved. | Created by Kevin Meehan</p>
         <p>Contact: info@koreannewsenglish.com</p>
         <p>Follow us on:
-          <a href="#">Facebook</a> |
+            <a href="#">Facebook</a> |
             <a href="#">Twitter</a> |
             <a href="#">Instagram</a>
         </p>
@@ -425,4 +426,4 @@
         });
     </script>
 </body>
-</html>  
+</html>
