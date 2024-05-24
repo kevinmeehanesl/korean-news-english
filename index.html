@@ -59,6 +59,56 @@
             max-width: 800px;
             padding: 20px;
         }
+        
+        .header-title {
+            background-color: #002D72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .header-title h1 {
+            margin: 0;
+        }
+        
+        .header-title p {
+            margin: 5px 0 0;
+        }
+        
+        .article-title {
+            background-color: #002D72;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            font-size: 0.9em;
+            color: grey;
+        }
+        
+        .contents {
+            margin: 20px 0;
+        }
+        
+        .contents h3 {
+            margin-bottom: 10px;
+        }
+        
+        .contents ol {
+            padding-left: 20px;
+        }
+
+        .vocabulary-section, .warm-up-section, .article-section, .comprehension-section, .gap-fill-section, .concluding-questions-section, .synonym-matching-section {
+            margin-bottom: 20px;
+        }
+
+        .word-bank {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -93,17 +143,43 @@
                         <a href="#contact">Contact</a>
                     </div>
                 </li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services</a>
+                </li>
             </ul>
         </nav>
-        <img src="KNElogo.webp" alt="KNE - Korean News English Logo" class="logo">
-        <div class="header-text">
+        <div class="header-title">
             <h1>Korean News English</h1>
-            <h2>Jamsil Station Becomes Seoul's Busiest Subway Station</h2>
+            <p>Your Gateway to English News from Korea – Enhancing Speaking, Vocabulary, and Reading Comprehension</p>
         </div>
+        <img src="KNElogo.webp" alt="KNE - Korean News English Logo" class="logo">
     </header>
 
     <div class="container">
-        <section id="vocabulary">
+        <div class="article-title">
+            <h2>Jamsil Station Becomes Seoul's Busiest Subway Station</h2>
+            <p class="date">Published: May 24, 2024</p>
+        </div>
+        
+        <div class="contents">
+            <h3>Contents</h3>
+            <ol>
+                <li>Vocabulary</li>
+                <li>Warm-up</li>
+                <li>Article</li>
+                <li>Comprehension
+                    <ul>
+                        <li>True/False Questions</li>
+                        <li>Multiple Choice Questions</li>
+                    </ul>
+                </li>
+                <li>Gap Fill</li>
+                <li>Concluding Questions</li>
+                <li>Synonym Matching</li>
+            </ol>
+        </div>
+
+        <section id="vocabulary" class="vocabulary-section">
             <h3>Key Vocabulary</h3>
             <table>
                 <tr>
@@ -164,7 +240,7 @@
             </table>
         </section>
         
-        <section id="warm-up">
+        <section id="warm-up" class="warm-up-section">
             <h3>Warm-Up Questions (Speaking)</h3>
             <ol>
                 <li>Why do you think Jamsil Station has become the busiest station in Seoul?</li>
@@ -175,7 +251,7 @@
             </ol>
         </section>
         
-        <section id="article">
+        <section id="article" class="article-section">
             <h3>Article</h3>
             <p><strong>SEOUL</strong>, May 23 (Yonhap) -- <strong>Jamsil Station</strong> on <strong>Seoul's Subway Line No. 2</strong> is now the busiest station in the capital, surpassing <strong>Gangnam Station</strong>. Over 150,000 passengers use Jamsil Station every day, according to <strong>Seoul Metro</strong> on Thursday.</p>
             <p>In the first four months of this year, Jamsil Station in southeastern Seoul had an average of 155,229 passengers per day. <strong>In comparison</strong>, Gangnam Station had 151,607 passengers per day. This data was gathered from all stations on Lines 1-9 by Seoul Metro.</p>
@@ -191,11 +267,11 @@
             </ul>
             <p>Seoul Metro also <strong>noted</strong> that the average number of subway users in Seoul per day was 8.8 million from January to April.</p>
             <p>Compared to other major cities <strong>worldwide</strong>, Seoul's subway system is extremely busy. <strong>For instance</strong>, the <strong>London Underground</strong>'s busiest station, <strong>Waterloo</strong>, handles about 100 million passengers annually, which translates to roughly 273,000 passengers per day. Similarly, <strong>Tokyo's Shinjuku Station</strong> is known as the world's busiest transport <strong>hub</strong>, with an average of 3.5 million passengers per day. While Seoul's numbers are slightly lower, they highlight the <strong>efficiency</strong> and popularity of the city's subway system.</p>
-                       <p><strong>Published:</strong> May 24, 2024</p>
+            <p><strong>Published:</strong> May 24, 2024</p>
             <p><strong>Source:</strong> <a href="https://en.yna.co.kr/view/AEN20240523002600315">Yonhap News</a></p>
         </section>
         
-        <section id="comprehension-quiz">
+        <section id="comprehension-quiz" class="comprehension-section">
             <h3>Comprehension Quiz</h3>
             <h4>True/False Questions</h4>
             <ol>
@@ -231,8 +307,27 @@
                         <li class="interactive" data-correct="false">d. New York</li>
                     </ul>
                 </li>
+                <li>What is the daily average number of passengers at Gangnam Station in the first four months of this year?
+                    <ul>
+                        <li class="interactive" data-correct="false">a. 147,356</li>
+                        <li class="interactive" data-correct="false">b. 106,564</li>
+                        <li class="interactive" data-correct="true">c. 151,607</li>
+                        <li class="interactive" data-correct="false">d. 155,229</li>
+                    </ul>
+                </li>
+                <li>How does Seoul's subway system compare to other major cities' systems in terms of busyness?
+                    <ul>
+                        <li class="interactive" data-correct="true">a. Extremely busy</li>
+                        <li class="interactive" data-correct="false">b. Less busy</li>
+                        <li class="interactive" data-correct="false">c. Not busy</li>
+                        <li class="interactive" data-correct="false">d. Moderately busy</li>
+                    </ul>
+                </li>
             </ol>
-            <h4>Vocabulary Fill-in-the-Gap</h4>
+        </section>
+
+        <section id="gap-fill" class="gap-fill-section">
+            <h3>Gap Fill</h3>
             <ol>
                 <li>Jamsil Station is in __________ Seoul.</li>
                 <li>The subway is faster because of heavy __________.</li>
@@ -240,10 +335,12 @@
                 <li>The busiest station in London is __________.</li>
                 <li>Tokyo's busiest station is __________ Station.</li>
             </ol>
-            <p><strong>Word Bank</strong>: southeastern, congestion, 1-9, Waterloo, Shinjuku</p>
+            <div class="word-bank">
+                <strong>Word Bank</strong>: southeastern, congestion, 1-9, Waterloo, Shinjuku
+            </div>
         </section>
-        
-        <section id="concluding-questions">
+
+        <section id="concluding-questions" class="concluding-questions-section">
             <h3>Concluding Questions (Speaking)</h3>
             <ol>
                 <li>What do you think are the biggest challenges for Seoul Metro in managing such a busy subway system?</li>
@@ -254,7 +351,7 @@
             </ol>
         </section>
         
-        <section id="synonym-matching">
+        <section id="synonym-matching" class="synonym-matching-section">
             <h3>Synonym Matching</h3>
             <p>Match the key vocabulary from the article with their synonyms.</p>
             <table>
@@ -310,7 +407,7 @@
         <p>© 2024 Korean News English. All rights reserved.</p>
         <p>Contact: info@koreannewsenglish.com</p>
         <p>Follow us on:
-            <a href="#">Facebook</a> |
+          <a href="#">Facebook</a> |
             <a href="#">Twitter</a> |
             <a href="#">Instagram</a>
         </p>
@@ -328,4 +425,4 @@
         });
     </script>
 </body>
-</html>
+</html>  
