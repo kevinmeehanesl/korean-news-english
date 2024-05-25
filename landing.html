@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean News Lessons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Korean News Lessons</h1>
+        <p id="date"></p>
+    </header>
+
+    <div class="container">
+        <div class="article-preview">
+            <a href="article1.html" class="article-title">Jamsil Station Becomes Seoul's Busiest Subway Station</a>
+            <p class="date"><strong>2024년 5월 24일</strong></p>
+            <p>SEOUL, May 23 (Yonhap) -- Jamsil Station on Seoul's Subway Line No. 2 is now the busiest station in the capital, surpassing Gangnam Station...</p>
+        </div>
+        <!-- Add more article previews as needed -->
+    </div>
+
+    <footer>
+        <p>© 2024 Korean News Lessons. All rights reserved. | Created by Kevin Meehan</p>
+        <p>Contact: info@koreannewsenglish.com</p>
+    </footer>
+
+    <script>
+        // JavaScript to update the date automatically
+        document.getElementById('date').innerHTML = new Date().toLocaleDateString('ko-KR', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
