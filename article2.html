@@ -4,76 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Police Search Seoul Station After Threat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            padding: 20px;
-            margin: 20px auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .header {
-            width: 100%;
-            background-color: #002D72;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .header p {
-            margin: 5px 0 0 0;
-        }
-        .logo {
-            max-width: 150px;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
-        h2, h3 {
-            color: #002D72;
-        }
-        .vocab-table, .synonym-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        .vocab-table th, .vocab-table td, .synonym-table th, .synonym-table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        .vocab-table th, .synonym-table th {
-            background-color: #f2f2f2;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #002D72;
-            color: white;
-            width: 100%;
-            margin-top: 20px;
-            border-radius: 0 0 10px 10px;
-        }
-        /* Media Query for Mobile Devices */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
@@ -90,7 +21,7 @@
 
         <section>
             <h3>Vocabulary</h3>
-            <table class="vocab-table">
+            <table>
                 <tr>
                     <th>English</th>
                     <th>Korean</th>
@@ -120,6 +51,21 @@
                     <td>Vigilance</td>
                     <td>경계</td>
                     <td>The police emphasized the need for vigilance.</td>
+                </tr>
+                <tr>
+                    <td>Cordon</td>
+                    <td>통제하다</td>
+                    <td>Police cordoned off parts of the station.</td>
+                </tr>
+                <tr>
+                    <td>Surveillance</td>
+                    <td>감시</td>
+                    <td>Additional surveillance was implemented to deter threats.</td>
+                </tr>
+                <tr>
+                    <td>Incident</td>
+                    <td>사건</td>
+                    <td>The incident at Seoul Station raised public safety concerns.</td>
                 </tr>
             </table>
         </section>
@@ -172,8 +118,8 @@
                 <li>The threat to stab 50 people was received by the Seoul Metropolitan Police Department. (True)</li>
                 <li>Only 50 police officers were deployed to Seoul Station. (False)</li>
                 <li>Bomb-sniffing dogs were used in the search operation. (True)</li>
-                <li>The police found several weapons and explosives. (False)</li>
-                <li>South Korea has a high crime rate and low public safety. (False)</li>
+                <li>The police found several weapons and explosives. (False)</
+<li>South Korea has a high crime rate and low public safety. (False)</li>
             </ul>
         </section>
 
@@ -212,78 +158,102 @@
                         <li>D) Moon Jae-in</li>
                     </ul>
                 </li>
-                                    <li>What recent incident intensified the fear of random violence?
-                        <ul>
-                            <li>A) A robbery</li>
-                            <li>B) A protest</li>
-                            <li>C) A stabbing attack in Seongnam</li>
-                            <li>D) A fire</li>
-                        </ul>
-                    </li>
-                </ol>
-            </section>
+                <li>What recent incident intensified the fear of random violence?
+                    <ul>
+                        <li>A) A robbery</li>
+                        <li>B) A protest</li>
+                        <li>C) A stabbing attack in Seongnam</li>
+                        <li>D) A fire</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
 
-            <section>
-                <h3>Gap Fill</h3>
-                <p>Fill in the gaps using the words from the word bank below.</p>
-                <p><strong>Word Bank:</strong> mobilized, evacuated, tactical, vigilance, search</p>
-                <p>
-                    On May 24, 2024, a significant security incident occurred at Seoul Station following a threat to stab 50 people. The Seoul Metropolitan Police Department received the threat and quickly <strong>(1)</strong> a large-scale operation to secure the area and ensure public safety.
-                </p>
-                <p>
-                    Authorities swiftly <strong>(2)</strong> and cordoned off parts of Seoul Station, one of the busiest transport hubs in the city. Over 150 police officers, including special <strong>(3)</strong> units, were deployed to <strong>(4)</strong> for any potential threats or suspicious individuals.
-                </p>
-                <p>
-                    Police Commissioner General Yoon Hee-keun emphasized the need for <strong>(5)</strong>, especially in crowded areas, and assured the public that measures were being taken to prevent such threats in the future.
-                </p>
-            </section>
+        <section>
+            <h3>Gap Fill</h3>
+            <p>Fill in the gaps using the words from the word bank below.</p>
+            <p class="word-bank"><strong>Word Bank:</strong> mobilized, evacuated, tactical, vigilance, search</p>
+            <p>
+                On May 24, 2024, a significant security incident occurred at Seoul Station following a threat to stab 50 people. The Seoul Metropolitan Police Department received the threat and quickly <strong>(1)</strong> a large-scale operation to secure the area and ensure public safety.
+            </p>
+            <p>
+                Authorities swiftly <strong>(2)</strong> and cordoned off parts of Seoul Station, one of the busiest transport hubs in the city. Over 150 police officers, including special <strong>(3)</strong> units, were deployed to <strong>(4)</strong> for any potential threats or suspicious individuals.
+            </p>
+            <p>
+                Police Commissioner General Yoon Hee-keun emphasized the need for <strong>(5)</strong>, especially in crowded areas, and assured the public that measures were being taken to prevent such threats in the future.
+            </p>
+        </section>
 
-            <section>
-                <h3>Concluding Questions</h3>
-                <ul>
-                    <li>What measures can be taken to improve security in public places?</li>
-                    <li>How can the community help in preventing such threats?</li>
-                    <li>What role does media play in shaping public perception of safety?</li>
-                    <li>How do you think the police should handle threats of violence in the future?</li>
-                    <li>What can be learned from this incident to prevent future occurrences?</li>
-                </ul>
-            </section>
+        <section>
+            <h3>Concluding Questions</h3>
+            <ul>
+                <li>What measures can be taken to improve security in public places?</li>
+                <li>How can the community help in preventing such threats?</li>
+                <li>What role does media play in shaping public perception of safety?</li>
+                <li>How do you think the police should handle threats of violence in the future?</li>
+                <li>What can be learned from this incident to prevent future occurrences?</li>
+            </ul>
+        </section>
 
-            <section>
-                <h3>Synonym Matching</h3>
-                <p>Match the words on the left with their synonyms on the right.</p>
-                <table class="synonym-table">
-                    <tr>
-                        <th>Word</th>
-                        <th>Synonym</th>
-                    </tr>
-                    <tr>
-                        <td>Threat</td>
-                        <td>Danger</td>
-                    </tr>
-                    <tr>
-                        <td>Mobilize</td>
-                        <td>Deploy</td>
-                    </tr>
-                    <tr>
-                        <td>Evacuate</td>
-                        <td>Clear</td>
-                    </tr>
-                    <tr>
-                        <td>Tactical</td>
-                        <td>Strategic</td>
-                    </tr>
-                    <tr>
-                        <td>Vigilance</td>
-                        <td>Alertness</td>
-                    </tr>
-                </table>
-            </section>
-        </div>
+        <section>
+            <h3>Synonym Matching</h3>
+            <p>Match the words on the left with their synonyms on the right.</p>
+            <table>
+                <tr>
+                    <th>Word</th>
+                    <th>Synonym</th>
+                </tr>
+                <tr>
+                    <td>Threat</td>
+                    <td>Danger</td>
+                </tr>
+                <tr>
+                    <td>Mobilize</td>
+                    <td>Deploy</td>
+                </tr>
+                <tr>
+                    <td>Evacuate</td>
+                    <td>Clear</td>
+                </tr>
+                <tr>
+                    <td>Tactical</td>
+                    <td>Strategic</td>
+                </tr>
+                <tr>
+                    <td>Vigilance</td>
+                    <td>Alertness</td>
+                </tr>
+            </table>
+        </section>
+    </div>
 
-        <footer>
-            <p>© 2024 Korean News English. All rights reserved. | Created by Kevin Meehan</p>
-            <p>Contact: info@koreannewsenglish.com</p>
-        </footer>
-    </body>
+    <footer>
+        <p>© 2024 Korean News English. All rights reserved. | Created by Kevin Meehan</p>
+        <p>Contact: info@koreannewsenglish.com</p>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        const trueFalseAnswers = ['true', 'false', 'true', 'false', 'false'];
+        document.querySelectorAll('section h3').forEach((section, index) => {
+            if (section.textContent === 'True/False Questions') {
+                section.nextElementSibling.querySelectorAll('li').forEach((li, idx) => {
+                    li.addEventListener('click', function () {
+                        if (this.textContent.includes(trueFalseAnswers[idx])) {
+                            this.classList.add('correct');
+                        } else {
+                            this.classList.add('incorrect');
+                        }
+                    });
+                });
+            }
+        });
+
+        document.querySelectorAll('.interactive').forEach((item) => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
 </html>
